@@ -1,0 +1,24 @@
+[project]
+name = "ai-tutorial"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "pavanbelagatti", email = "johncultnight@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "langchain",
+    "langchain-ollama", 
+    "langchain-singlestore",
+    "docker",
+    "pandas",
+    "singlestoredb"
+]
+
+[tool.poetry]
+packages = [{include = "ai_tutorial", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
